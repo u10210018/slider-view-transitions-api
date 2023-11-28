@@ -58,7 +58,7 @@ layout: two-cols
 ---
 
 # 至此之前的努力和方向
-## View Transitions API
+## FLIP
 
 
 <div class="mt-10"><mingcute-award-fill /> FLIP動畫概念</div>
@@ -123,7 +123,7 @@ layout: two-cols
 ---
 
 # 至此之前的努力和方向
-## View Transitions API
+## GSAP Flip
 
 
 <div class="mt-10"><mingcute-award-fill /> GSAP Flip plugin</div>
@@ -150,7 +150,7 @@ layout: two-cols
 ---
 
 # 至此之前的努力和方向
-## View Transitions API
+## Vue Starport
 
 
 <div class="mt-10"><mingcute-award-fill /> Vue Starport</div>
@@ -185,6 +185,12 @@ iframe {
 
 
 </style>
+
+---
+layout: statement
+---
+
+<h1 v-click>View Transitions API</h1>
 
 ---
 layout: two-cols

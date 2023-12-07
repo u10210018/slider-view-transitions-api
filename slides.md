@@ -95,7 +95,7 @@ layout: two-cols
 
 <div class="mt-24"></div>
 
-```js
+```js  {1-2|3-5|6-8|9-11|12-20|all}
 // Get the first position.
 const first = el.getBoundingClientRect();
 
@@ -172,25 +172,14 @@ import { Starport } from 'vue-starport'
 ```
 ::right::
 
-<iframe class="w-400px h-300px mt-24" scrolling="no" title="Flip Plugin swap elements" src="https://vue-starport.netlify.app/" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe class="w-1030px h-600px mt-24 scale-40 transform-origin-tl" title="Flip Plugin swap elements" src="https://vue-starport.netlify.app/" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
-<style>
-iframe {
-  transform: scale(0.4);
-    transform-origin: 0 0;
-    height: 600px;
-    width: 1130px;
-}
-
-
-</style>
-
 ---
-layout: statement
+layout: default
 ---
 
-<h1 v-click>View Transitions API</h1>
+<img v-click class="w-full h-full cover" src="assets/images/view-transition-banner.jpg" alt="view transition api banner" />
 
 ---
 layout: two-cols
@@ -233,7 +222,7 @@ document.startViewTransition(() => {
 </v-click>
 
 <v-click>
-<div class="mb-1 mt-8 font-bold">pseudo-element tree</div>
+<div class="mb-1 mt-8 font-bold">Pseudo-elements</div>
 ```html
 ::view-transition
 └─ ::view-transition-group(root)
@@ -242,3 +231,71 @@ document.startViewTransition(() => {
       └─ ::view-transition-new(root)
 ```
 </v-click>
+
+---
+layout: two-cols
+---
+
+# 範例
+## 實作嘗試
+
+<iframe class="w-1030px h-600px mt-24 scale-40 transform-origin-tl" title="demo view transitions api" src="https://u10210018.github.io/demo-view-transitions-api/" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+</iframe>
+
+::right::
+
+<v-click>
+<div class="mt-4 font-bold">Photos.vue</div>
+```vue {1-7|8-17|18-23|all}
+<script setup>
+const handleActive = (key) => {
+  document.startViewTransition(() => {
+    activeKey.value = key
+  })
+}
+</script>
+
+<template>
+  <button
+    v-for="item in imageList"
+    :class="{ 'vt-img': activeKey === item.key }"
+    @click="handleActive(item.key)"
+  >
+    <img :src="item.imageUrl" />
+  </button>
+</template>
+
+<style>
+.vt-img {
+  view-transition-name: photo-transition;
+}
+</style>
+```
+</v-click>
+
+---
+layout: default
+---
+
+# 支援度
+## 值得期待
+
+<img class="mt-10" src="assets/images/view-transition-api-caniuse.png" alt="view transition api caniuse" />
+
+<div class="mt-4"></div>
+
+- 跨 document 過渡
+
+---
+layout: default
+---
+
+# 參考
+
+- [FLIP Your Animations - Paul Lewis](https://aerotwist.com/blog/flip-your-animations/)
+- [GSAP Flip](https://gsap.com/docs/v3/Plugins/Flip/)
+- [Smooth and simple transitions with the View Transitions API - Jake Archibald](https://developer.chrome.com/docs/web-platform/view-transitions)
+
+---
+layout: default
+---

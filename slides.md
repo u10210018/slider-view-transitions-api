@@ -24,34 +24,10 @@ mdc: true
 layout: default
 ---
 
-# 什麼是 View Transitions API ？
+# 從一個範例開始說起?
 
-<div class="grid h-full pb-200px content-center gap-4">
-  <v-click>
-    <h2>Web APIs</h2>
-   </v-click>
-  <v-click>
-    <div class="w-40vw">"The View Transitions API provides a mechanism for easily creating animated transitions between different DOM states while also updating the DOM contents in a single step."</div>
-  </v-click>
-</div>
-
----
-layout: default
----
-
-# 能達成什麼效果？
-## View Transitions API
-
-<div class="flex gap-7">
-  <div class="mt-20 flex flex-col gap-3">
-    <div class="text-24px" v-click><mingcute-arrow-right-circle-line /> 頁面過渡</div>
-    <div class="text-24px" v-click><mingcute-arrow-right-circle-line /> 元件的過渡</div>
-  </div>
-
-  <video class="ml-auto mt-5 h-40vh" playsinline muted controls loop autoplay>
-    <source type="video/mp4" src="assets/videos/demo-video-01.mp4">
-  </video>
-</div>
+<iframe class="w-1600px h-800px mt-7 scale-40 transform-origin-tl" title="page transitions" src="https://pagetransitions.netlify.app/" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+</iframe>
 
 ---
 layout: two-cols
@@ -182,6 +158,39 @@ layout: default
 <img v-click class="w-full h-full cover" src="assets/images/view-transition-banner.jpg" alt="view transition api banner" />
 
 ---
+layout: default
+---
+
+# 什麼是 View Transitions API ？
+
+<div class="grid h-full pb-200px content-center gap-4">
+  <v-click>
+    <h2>Web APIs</h2>
+   </v-click>
+  <v-click>
+    <div class="w-40vw">"The View Transitions API provides a mechanism for easily creating animated transitions between different DOM states while also updating the DOM contents in a single step."</div>
+  </v-click>
+</div>
+
+---
+layout: default
+---
+
+# 能達成什麼效果？
+## View Transitions API
+
+<div class="flex gap-7">
+  <div class="mt-20 flex flex-col gap-3">
+    <div class="text-24px" v-click><mingcute-arrow-right-circle-line /> 頁面過渡</div>
+    <div class="text-24px" v-click><mingcute-arrow-right-circle-line /> 元件的過渡</div>
+  </div>
+
+  <video class="ml-auto mt-5 h-40vh" playsinline muted controls loop autoplay>
+    <source type="video/mp4" src="assets/videos/demo-video-01.mp4">
+  </video>
+</div>
+
+---
 layout: two-cols
 ---
 
@@ -294,7 +303,9 @@ layout: default
 
 - [FLIP Your Animations - Paul Lewis](https://aerotwist.com/blog/flip-your-animations/)
 - [GSAP Flip](https://gsap.com/docs/v3/Plugins/Flip/)
+- [Vue Starport](https://github.com/antfu/vue-starport)
 - [Smooth and simple transitions with the View Transitions API - Jake Archibald](https://developer.chrome.com/docs/web-platform/view-transitions)
+- [Can I use - View Transitions API](https://caniuse.com/?search=View%20Transition%20API)
 
 ---
 layout: default

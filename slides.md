@@ -26,7 +26,7 @@ layout: default
 
 # 從一個範例開始說起?
 
-<iframe class="w-1600px h-800px mt-7 scale-40 transform-origin-tl" title="page transitions" src="https://pagetransitions.netlify.app/" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe class="w-1600px h-800px mt-16 scale-40 transform-origin-tl" title="page transitions" src="https://pagetransitions.netlify.app/" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
 ---
@@ -300,10 +300,10 @@ layout: default
 ---
 
 # 參考
-
+- [page-transitions-travelapp - sdras](https://github.com/sdras/page-transitions-travelapp)
 - [FLIP Your Animations - Paul Lewis](https://aerotwist.com/blog/flip-your-animations/)
 - [GSAP Flip](https://gsap.com/docs/v3/Plugins/Flip/)
-- [Vue Starport](https://github.com/antfu/vue-starport)
+- [Vue Starport - antfu](https://github.com/antfu/vue-starport)
 - [Smooth and simple transitions with the View Transitions API - Jake Archibald](https://developer.chrome.com/docs/web-platform/view-transitions)
 - [Can I use - View Transitions API](https://caniuse.com/?search=View%20Transition%20API)
 
